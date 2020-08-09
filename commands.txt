@@ -1,0 +1,13 @@
+1.docker section ----> https://hub.docker.com/_/influxdb
+
+
+2.after run the influxdb :
+	CREATE DATABASE shop;
+	SHOW DATABASES;
+	USE shop;
+	INSERT customer,room=1 price=10,weight=2.2 1465839830100400200
+	INSERT temperature,room=3,sensor=5 temp=26.8
+	INSERT customer,room=2 price=53,weight=3
+	SHOW MEASUREMENTS;
+	SELECT * FROM customer ;
+
