@@ -10,4 +10,14 @@
 	INSERT customer,room=2 price=53,weight=3
 	SHOW MEASUREMENTS;
 	SELECT * FROM customer ;
+	
+3.data producer python code (used api)
+
+4.make continous queries and see them
+	CREATE CONTINUOUS QUERY "myCQ" ON "shop" BEGIN SELECT count("price") INTO "BigBuy" FROM "customer" where price>4 GROUP BY time(10s) END
+	SHOW MEASUREMENTS
+	SELECT * FROM BigBuy;
+	
+	SHOW CONTINUOUS QUERIES
+
 
